@@ -1,0 +1,90 @@
+
+section {
+  background:url("cg.jpg");
+  background-color: #3b5998;
+  background-repeat:repeat-y;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity:0.9;
+  box-shadow: 0px 5px 10px;
+  
+}
+.form-group {
+  height:150px;
+  width: 100%;
+  font-size: 50px;
+}
+.form-group input,
+.form-group textarea {
+  background:silver;
+  width: 100%;
+  padding: 5px;
+  font-size: 50px;
+  border: 2px black solid;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  font-size: 54px;
+  border-radius: 8px;
+  color:black;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+  background: #3b5998;
+}
+button[type="submit"]:hover {
+  background-color: green;
+  color: white;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: green;
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: red;
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
